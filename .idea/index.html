@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Em có yêu anh không</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap" rel="stylesheet">
+  <style>
+    body{
+      font-family: "Playwrite ID", cursive;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 20px;
+    }
+    #khong {
+      position: absolute;
+      background: #ad2d16;
+      margin-left: 10px;
+      margin-top: 25px;
+    }
+    center{
+      margin-top: 300px;
+    }
+    button{
+      background: bisque;
+      color: crimson;
+      border: none;
+      font-size:15px;
+    }
+  </style>
+</head>
+<body>
+<center>
+<div>
+  <h2>Em yêu anh nhiều lắm phải không</h2>
+  <button>ĐÚNG VẬY</button>
+  <button id="khong" onmouseover="hoverNoBtn()">KHÔNG BAO GIỜ</button>
+</div>
+<script>
+  function hoverNoBtn() {
+    let topPx = Math.random() * window.innerHeight;
+    let leftPx = Math.random() * window.innerWidth;
+    document.getElementById("khong").style.top=`${topPx}px`;
+    document.getElementById("khong").style.left=`${leftPx}px`;
+  }
+</script>
+</center>
+</body>
+</html>
