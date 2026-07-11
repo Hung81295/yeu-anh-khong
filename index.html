@@ -7,45 +7,53 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap" rel="stylesheet">
   <style>
-    body{
+    body {
       font-family: "Playwrite ID", cursive;
       font-optical-sizing: auto;
       font-style: normal;
       font-size: 20px;
-      
+      background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzZnN3R5MzN0d3I4ZXJpOGh5ODRvYmo3MTkxZ2lodG90Y2MyN3dnNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IHhqBZIayhdnSWiWIg/giphy.gif");
+      background-size: cover;
     }
+
     #khong {
       position: absolute;
       background: #ad2d16;
       margin-left: 10px;
       margin-top: 25px;
     }
-    center{
+
+    center {
       margin-top: 300px;
     }
-    button{
+
+    button {
       background: bisque;
       color: crimson;
       border: none;
-      font-size:15px;
+      font-size: 15px;
     }
   </style>
 </head>
 <body>
 <center>
-<div>
-  <h2>Em yêu anh nhiều lắm phải không </h2>
-  <button>ĐÚNG VẬY</button>
-  <button id="khong" onmouseover="hoverNoBtn()">KHÔNG BAO GIỜ</button>
-</div>
-<script>
-  function hoverNoBtn() {
-    let topPx = Math.random() * window.innerHeight;
-    let leftPx = Math.random() * window.innerWidth;
-    document.getElementById("khong").style.top=`${topPx}px`;
-    document.getElementById("khong").style.left=`${leftPx}px`;
-  }
-</script>
+  <div>
+    <h2 style="color: #b63eac">Em yêu anh nhiều lắm phải không </h2>
+    <button onclick="yesbtn()">ĐÚNG VẬY</button>
+    <button id="khong" onmouseover="hoverNoBtn()">KHÔNG BAO GIỜ</button>
+  </div>
+  <script>
+    function hoverNoBtn() {
+      let topPx = Math.random() * window.innerHeight;
+      let leftPx = Math.random() * window.innerWidth;
+      document.getElementById("khong").style.top = `${topPx}px`;
+      document.getElementById("khong").style.left = `${leftPx}px`;
+    }
+
+    function yesbtn() {
+      alert("ANH CŨNG YÊU EM NHIỀU LẮM");
+    }
+  </script>
 </center>
 </body>
 </html>
